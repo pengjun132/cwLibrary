@@ -1,0 +1,19 @@
+{
+    "name": "CW/cwlibrary",
+    "description": "CW test",
+    "type": "library",
+    "license": "test",
+    "authors": [
+        {
+            "name": "pengjun",
+            "email": "1098325951@qq.com"
+        }
+    ],
+    "require": {},
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "CW\\cwlibrary\\": "src"
+        }
+    }
+}
