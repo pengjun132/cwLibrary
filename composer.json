@@ -1,5 +1,5 @@
 {
-    "name": "CW/cwlibrary",
+    "name": "pengjun132/cwlibrary",
     "description": "CW test",
     "type": "library",
     "license": "test",
@@ -13,7 +13,7 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "CW\\cwlibrary\\": "src"
+            "pengjun132\\cwlibrary\\": "src"
         }
     }
 }

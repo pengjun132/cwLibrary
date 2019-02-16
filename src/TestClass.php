@@ -1,5 +1,5 @@
 <?php
-    namespace CW\cwlibrary;
+    namespace pengjun132\cwlibrary;
 
     class TestClass{
         //测试方法
