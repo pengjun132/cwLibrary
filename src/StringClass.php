@@ -1,5 +1,6 @@
 <?php
 /***字符串处理类****/
+namespace pengjun132\cwlibrary;
 class StringClass{
     /**
      *  处理禁用HTML但允许换行的内容

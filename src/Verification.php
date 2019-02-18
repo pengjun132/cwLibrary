@@ -7,6 +7,7 @@
  * Time: 11:39
  * 验证的组件
  */
+namespace pengjun132\cwlibrary;
 class Verification
 {
 

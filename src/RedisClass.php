@@ -1,6 +1,6 @@
 <?php
 
-
+  namespace pengjun132\cwlibrary;
   class RedisClass
   {
     static $_instance; //存储对象

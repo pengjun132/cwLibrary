@@ -5,7 +5,7 @@
 3 类作为一个单例的对象存在
 4:修改类可以自定义日志文件名字
 */
-
+namespace pengjun132\cwlibrary;
 class Log {
     
     private  static $_instance;

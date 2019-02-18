@@ -6,6 +6,7 @@
  * Time: 11:29
  * 公共基础类
  */
+namespace pengjun132\cwlibrary;
 class Common
 {
     /**

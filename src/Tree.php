@@ -5,6 +5,7 @@
  * @Last Modified by:   Awe
  * @Last Modified time: 2017-09-15 14:59:12
  */
+namespace pengjun132\cwlibrary;
 class Tree{
 
     //格式化从数据库查询的树状数据，索引为自增的编号ID

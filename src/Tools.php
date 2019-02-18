@@ -1,4 +1,5 @@
 <?php
+namespace pengjun132\cwlibrary;
 class Tools {
     /**
      * 对手机号中间几位用 * 隐藏

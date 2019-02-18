@@ -1,5 +1,6 @@
 <?php
 /***加密类****/
+namespace pengjun132\cwlibrary;
 class Encrypt{
 	/*摘自 discuz
 	 * $string 明文或密文

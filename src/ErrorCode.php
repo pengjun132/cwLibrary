@@ -11,6 +11,7 @@
  *    <li>-41016: base64解密失败</li>
  * </ul>
  */
+namespace pengjun132\cwlibrary;
 class ErrorCode
 {
 	public static $OK = 0;
