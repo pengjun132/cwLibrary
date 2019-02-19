@@ -1,6 +1,6 @@
 <?php
-
-class DB_mode
+namespace pengjun132\cwlibrary\DB;
+class mode
 {
     private $dbh;
     static $_instance; //存储对象
@@ -19,8 +19,8 @@ class DB_mode
         $password = $data['password'];
         $this->dbprefix = $data['dbprefix'];		
         try {
-            $this->dbh = new PDO($dsn, $user, $password , array(
-                PDO::MYSQL_ATTR_LOCAL_INFILE => true ,
+            $this->dbh = new \PDO($dsn, $user, $password , array(
+                \PDO::MYSQL_ATTR_LOCAL_INFILE => true ,
             ) );
         } catch (PDOException $e) {
             echo 'Connection failed: ' . $e->getMessage();
@@ -61,7 +61,7 @@ class DB_mode
         } else {
             $sth->execute($data);
         }
-        $result = $sth->fetch(PDO::FETCH_ASSOC);
+        $result = $sth->fetch(\PDO::FETCH_ASSOC);
         return $result;
 
     }
@@ -69,14 +69,14 @@ class DB_mode
     //查询多行返回数组
     public function find($sql, $data = null)
     {
-        $sth = $this->dbh->prepare($sql, array(PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY));
+        $sth = $this->dbh->prepare($sql, array(\PDO::ATTR_CURSOR => \PDO::CURSOR_FWDONLY));
         if (empty($data)) {
             $sth->execute();
         } else {
             $sth->execute($data);
         }
 
-        $result = $sth->fetchAll(PDO::FETCH_ASSOC);
+        $result = $sth->fetchAll(\PDO::FETCH_ASSOC);
         return $result;
 
     }
@@ -167,8 +167,8 @@ class DB_mode
     //事物开始
     public function beginTransaction()
     {
-        //$this->dbh->setAttribute(PDO::ATTR_ERRMODE, 2);
-        $this->dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        //$this->dbh->setAttribute(\PDO::ATTR_ERRMODE, 2);
+        $this->dbh->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
         $this->dbh->beginTransaction();
     }
 
