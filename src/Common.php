@@ -58,7 +58,7 @@ class Common
         if(!file_exists($filename)){
             exit("file {$class}.php is not exists ");
         }
-        Yaf_loader::import($filename);//导入类库（业务逻辑类库之类的）
+        \Yaf_loader::import($filename);//导入类库（业务逻辑类库之类的）
         $_obj[$obj_key] = new $class();
         return $_obj[$obj_key];
     }

@@ -13,7 +13,7 @@
         if ( !extension_loaded('redis') ) {
             throw new Exception("REDIS NOT  SUPPORT", 1);
         }
-        $this->handler =  new Redis();
+        $this->handler =  new \Redis();
         //从配置读取
         $this->handler->connect($data['hostname'],$data['port']);
         $this->handler->auth($data['auth']);
