@@ -8,6 +8,7 @@
  * 验证的组件
  */
 namespace pengjun132\cwlibrary;
+use pengjun132\cwlibrary\StringClass; 
 class Verification
 {
 
